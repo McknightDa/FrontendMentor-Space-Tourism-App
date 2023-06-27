@@ -1,0 +1,16 @@
+<div id="dest-text">
+  <app-destnavbar></app-destnavbar>
+  <p id="name-dest">{{ getDest.destData[3].name.toUpperCase() }}</p>
+  <p id="desc">{{ getDest.destData[3].description }}</p>
+  <div id="sub-text">
+    <div id="sub-upper-text">
+      <p class="dataHeader">AVG. DISTANCE</p>
+      <p class="dataInfo">{{ getDest.destData[3].distance.toUpperCase() }}</p>
+    </div>
+    <div id="sub-upper-text">
+      <p class="dataHeader">EST. TRAVEL TIME</p>
+      <p class="dataInfo">{{ getDest.destData[3].travel.toUpperCase() }}</p>
+    </div>
+  </div>
+  <hr id="line" />
+</div>

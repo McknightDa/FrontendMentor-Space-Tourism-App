@@ -1,0 +1,168 @@
+@media only screen and (min-width: 376px) {
+  #main-container {
+    height: 900px;
+    width: 1440px;
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
+    object-fit: fill;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-bottom: -8px;
+  }
+  #parent {
+    height: 650px;
+    display: grid;
+    grid-template-columns: 59% 1% 40%;
+  }
+  #header.b {
+    letter-spacing: 4px;
+  }
+  #header {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px;
+    color: #ffffff;
+    letter-spacing: 4.72px;
+    line-height: 1px;
+  }
+  #child {
+    height: 472px;
+    width: 445px;
+    display: grid;
+    margin-left: 180px;
+    margin-top: 100px;
+  }
+  ::ng-deep #name-dest {
+    font-family: "Bellefair";
+    font-size: 100px;
+    color: #ffffff;
+    margin-top: 30px;
+  }
+  ::ng-deep #desc {
+    font-family: "Barlow";
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 32px;
+    margin-right: 130px;
+    margin-top: 50px;
+  }
+  ::ng-deep #dest-text {
+    margin-top: 150px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 44px 125px 140px 1fr;
+  }
+  ::ng-deep #sub-text {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  ::ng-deep #sub-upper-text {
+    display: grid;
+    grid-template-rows: 50% 50%;
+  }
+  ::ng-deep .dataHeader {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 2.5px;
+    line-height: 1px;
+    margin-top: 150px;
+  }
+  ::ng-deep .dataInfo {
+    font-family: "Bellefair";
+    font-size: 28px;
+    color: #ffffff;
+    margin-top: 40px;
+  }
+  ::ng-deep #line {
+    width: 444px;
+    position: absolute;
+    margin-top: 400px;
+    color: #979797;
+  }
+  #img {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #main-container {
+    height: 850px;
+    width: 375px;
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
+    background-repeat: repeat;
+    object-fit: fill;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-bottom: -8px;
+  }
+  #parent {
+    height: 400px;
+    display: grid;
+    grid-template-rows: 40% 1% 59%;
+    margin-left: 75px;
+  }
+  #child {
+    height: 472px;
+    width: 375px;
+    display: grid;
+    /* margin-left: 75px; */
+    margin-top: -75px;
+  }
+  #header {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 2.72px;
+    line-height: 1px;
+    /* margin-left: 75px; */
+    margin-top: 20px;
+  }
+  ::ng-deep #name-dest {
+    font-family: "Bellefair";
+    font-size: 56px;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-right: 150px;
+    text-align: center;
+  }
+  ::ng-deep #desc {
+    font-family: "Barlow";
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 25px;
+    margin-left: -40px;
+    margin-right: 100px;
+    margin-top: -40px;
+    text-align: center;
+  }
+  #img-container {
+    margin-top: -200px;
+    margin-left: 25px;
+  }
+  #img {
+    height: 170px;
+    width: 170px;
+  }
+  ::ng-deep .dataHeader {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 2.5px;
+    line-height: 1px;
+    margin-top: 50px;
+    margin-left: -140px;
+    text-align: center;
+  }
+  ::ng-deep .dataInfo {
+    font-family: "Bellefair";
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+    margin-left: -140px;
+  }
+  ::ng-deep #line {
+    width: 327px;
+    position: absolute;
+    margin-top: -225px;
+    margin-left: -50px;
+    color: #979797;
+  }
+}

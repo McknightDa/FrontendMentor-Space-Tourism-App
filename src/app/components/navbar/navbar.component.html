@@ -1,0 +1,125 @@
+<div id="upper-main-nav">
+  <svg
+    *ngIf="isMobile === false"
+    id="logo"
+    xmlns="http://www.w3.org/2000/svg"
+    height="48"
+    width="48"
+  >
+    <g fill="none" fill-rule="evenodd">
+      <circle cx="24" cy="24" r="24" fill="#FFF" />
+      <path
+        fill="#0B0D17"
+        d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"
+      />
+    </g>
+  </svg>
+  <hr id="line" *ngIf="isMobile === false" />
+  <div id="upper-navbar" *ngIf="isMobile === false">
+    <p></p>
+    <p
+      class="nav-text"
+      [ngClass]="{ active: activeData === 'home' }"
+      (click)="home()"
+      routerLink="/home"
+    >
+      <b>00</b> HOME
+    </p>
+    <p
+      class="nav-text"
+      [ngClass]="{ active: activeData === 'dest' }"
+      (click)="dest()"
+      routerLink="/dest"
+    >
+      <b>01</b> DESTINATION
+    </p>
+    <p
+      class="nav-text"
+      [ngClass]="{ active: activeData === 'crew' }"
+      (click)="crew()"
+      routerLink="/crew"
+    >
+      <b>02</b> CREW
+    </p>
+    <p
+      class="nav-text"
+      [ngClass]="{ active: activeData === 'tech' }"
+      (click)="tech()"
+      routerLink="/tech"
+    >
+      <b>03</b> TECHNOLOGY
+    </p>
+  </div>
+  <svg
+    id="logo"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 200 200"
+    *ngIf="isMobile === true"
+  >
+    <g fill="none" fill-rule="evenodd">
+      <circle cx="24" cy="24" r="24" fill="#FFF" />
+      <path
+        fill="#0B0D17"
+        d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"
+      />
+    </g>
+  </svg>
+  <svg
+    (click)="dispMenu()"
+    id="logoHam"
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="21"
+    *ngIf="isMobile === true"
+  >
+    <g fill="#D0D6F9" fill-rule="evenodd">
+      <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+    </g>
+  </svg>
+  <div id="upper-navbar" *ngIf="isMobile === true && displayMenu === true">
+    <svg
+      (click)="dispMenu()"
+      id="logoClose"
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="21"
+    >
+      <g fill="#D0D6F9" fill-rule="evenodd">
+        <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+        <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+      </g>
+    </svg>
+    <p
+      class="nav-text"
+      [ngClass]="{ active: activeData === 'home' }"
+      (click)="home()"
+      routerLink="/home"
+    >
+      <b>00</b> HOME
+    </p>
+    <p
+      class="nav-text"
+      [ngClass]="{ active: activeData === 'dest' }"
+      (click)="dest()"
+      routerLink="/dest"
+    >
+      <b>01</b> DESTINATION
+    </p>
+    <p
+      class="nav-text"
+      [ngClass]="{ active: activeData === 'crew' }"
+      (click)="crew()"
+      routerLink="/crew"
+    >
+      <b>02</b> CREW
+    </p>
+    <p
+      class="nav-text"
+      [ngClass]="{ active: activeData === 'tech' }"
+      (click)="tech()"
+      routerLink="/tech"
+    >
+      <b>03</b> TECHNOLOGY
+    </p>
+  </div>
+</div>

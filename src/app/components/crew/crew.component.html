@@ -1,0 +1,12 @@
+<div id="main-container">
+  <app-navbar></app-navbar>
+  <div id="parent">
+    <div id="child">
+      <p id="header"><b>02</b> MEET YOUR CREW</p>
+      <router-outlet *ngIf="fetchedData === true"></router-outlet>
+    </div>
+    <div *ngIf="fetchedData === true" id="img">
+      <img src='{{getCrew.crewData[getCrew.activeSubCrewNavBar].images.png}}' id='img'  alt="" />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+@media only screen and (min-width: 376px) {
+  #four-container {
+    display: grid;
+    grid-template-columns: repeat(4, 32px);
+  }
+}
+.btn {
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  opacity: 17%;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+.active {
+  opacity: 100%;
+}
+@media only screen and (max-width: 375px) {
+  #four-container {
+    display: grid;
+    grid-template-columns: repeat(4, 32px);
+    position: absolute;
+    margin-top: -325px;
+    margin-left: 130px;
+  }
+}

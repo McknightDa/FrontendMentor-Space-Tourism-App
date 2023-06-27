@@ -1,0 +1,14 @@
+<div id="destnavbar">
+  <div id="wrapper" [ngClass]="{ active: destActive === 0 }">
+    <p class="sub-nav" (click)="active('moon', 0)">MOON</p>
+  </div>
+  <div id="wrapper" [ngClass]="{ active: destActive === 1 }">
+    <p class="sub-nav" (click)="active('mars', 1)">MARS</p>
+  </div>
+  <div id="wrapper" [ngClass]="{ active: destActive === 2 }">
+    <p class="sub-nav" (click)="active('europa', 2)">EUROPA</p>
+  </div>
+  <div id="wrapper" [ngClass]="{ active: destActive === 3 }">
+    <p class="sub-nav" (click)="active('titan', 3)">TITAN</p>
+  </div>
+</div>

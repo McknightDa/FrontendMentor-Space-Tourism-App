@@ -1,0 +1,26 @@
+<div id="main">
+  <app-navbar></app-navbar>
+  <div id="subMain">
+    <div id="navtext-container">
+      <p id="header"><b>03</b> SPACE LAUNCH 101</p>
+      <div id="text-subnav">
+        <app-techsubnav></app-techsubnav>
+        <router-outlet *ngIf="fetchedData === true"></router-outlet>
+      </div>
+    </div>
+    <div *ngIf="fetchedData === true && getTech.isMobile === false" id="img">
+      <img
+        src="{{ getTech.techData[getTech.activeTechSub].images.portrait }}"
+        id="img"
+        alt=""
+      />
+    </div>
+    <div *ngIf="fetchedData === true && getTech.isMobile === true" id="img">
+      <img
+        src="{{ getTech.techData[getTech.activeTechSub].images.landscape }}"
+        id="img"
+        alt=""
+      />
+    </div>
+  </div>
+</div>

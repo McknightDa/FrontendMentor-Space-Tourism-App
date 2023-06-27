@@ -1,0 +1,23 @@
+<div id="techsub">
+  <div
+    class="numbtn"
+    [ngClass]="{ active: activeTechSub === 0 }"
+    (click)="activeTech(0, 'one')"
+  >
+    <p class="num" [ngClass]="{ active1: activeTechSub === 0 }">1</p>
+  </div>
+  <div
+    class="numbtn"
+    [ngClass]="{ active: activeTechSub === 1 }"
+    (click)="activeTech(1, 'two')"
+  >
+    <p class="num" [ngClass]="{ active1: activeTechSub === 1 }">2</p>
+  </div>
+  <div
+    class="numbtn"
+    [ngClass]="{ active: activeTechSub === 2 }"
+    (click)="activeTech(2, 'three')"
+  >
+    <p class="num" [ngClass]="{ active1: activeTechSub === 2 }">3</p>
+  </div>
+</div>

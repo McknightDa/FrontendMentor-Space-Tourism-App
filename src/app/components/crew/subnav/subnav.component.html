@@ -1,0 +1,22 @@
+<div id="four-container">
+  <div
+    class="btn"
+    (click)="nav('douglas', 0)"
+    [ngClass]="{ active: active === 0 }"
+  ></div>
+  <div
+    class="btn"
+    (click)="nav('mark', 1)"
+    [ngClass]="{ active: active == 1 }"
+  ></div>
+  <div
+    class="btn"
+    (click)="nav('victor', 2)"
+    [ngClass]="{ active: active === 2 }"
+  ></div>
+  <div
+    class="btn"
+    (click)="nav('anousheh', 3)"
+    [ngClass]="{ active: active === 3 }"
+  ></div>
+</div>

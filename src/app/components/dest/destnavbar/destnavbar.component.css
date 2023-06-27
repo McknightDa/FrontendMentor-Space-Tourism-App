@@ -1,0 +1,29 @@
+@media only screen and (min-width: 376px) {
+  #destnavbar {
+    display: grid;
+    grid-template-columns: repeat(3, 15%) 15% 1fr;
+  }
+  #wrapper {
+    margin-right: 30px;
+  }
+}
+.sub-nav {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  line-height: 1px;
+}
+.active {
+  border-bottom: 1px #ffffff solid;
+}
+
+@media only screen and (max-width: 375px) {
+  #destnavbar {
+    display: grid;
+    grid-template-columns: 15% 15% 20% 1fr;
+  }
+  #wrapper {
+    margin-right: 20px;
+  }
+}

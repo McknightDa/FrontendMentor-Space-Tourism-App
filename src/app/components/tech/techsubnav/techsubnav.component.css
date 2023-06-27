@@ -1,0 +1,66 @@
+@media only screen and (min-width: 376px) {
+  #techsub {
+    display: grid;
+    height: 304px;
+    width: 80px;
+    grid-template-rows: 33% 33% 33%;
+  }
+
+  .numbtn {
+    margin-top: 100px;
+    height: 80px;
+    width: 80px;
+    opacity: 25%;
+    border-radius: 50%;
+    border: 1px solid gray;
+  }
+  .num {
+    color: #ffffff;
+    font-family: "Bellefair";
+    font-size: 32px;
+    margin-top: 25px;
+    margin-left: 32px;
+  }
+
+  .active {
+    background-color: #ffffff;
+    opacity: 100%;
+    color: black;
+  }
+  .active1 {
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #techsub {
+    display: grid;
+    height: 40px;
+    width: 152px;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 250px;
+    margin-left: 120px;
+  }
+  .numbtn {
+    height: 40px;
+    width: 40px;
+    opacity: 25%;
+    border-radius: 50%;
+    border: 1px solid gray;
+  }
+  .num {
+    color: white;
+    font-family: "Bellefair";
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .active {
+    background-color: #ffffff;
+    opacity: 100%;
+    color: black;
+  }
+  .active1 {
+    color: black;
+  }
+}

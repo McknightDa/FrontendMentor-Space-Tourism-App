@@ -1,0 +1,17 @@
+<div id="main-container">
+  <app-navbar></app-navbar>
+  <div id="parent">
+    <div id="child">
+      <p id="header"><b>01</b> PICK YOUR DESTINATION</p>
+      <div *ngIf="fetchedData === true" id="img-container">
+        <img
+          id="img"
+          *ngIf="fetchedData === true"
+          src="{{ getDest.destData[getDest.activeDestbar].images.png }}"
+          alt=""
+        />
+      </div>
+    </div>
+    <router-outlet *ngIf="fetchedData === true"></router-outlet>
+  </div>
+</div>
