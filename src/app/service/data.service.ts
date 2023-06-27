@@ -18,13 +18,13 @@ export class DataService {
   activeSubCrewNavBar = 0;
   isMobile: boolean = window.innerWidth < 376;
   activeTechSub = 1;
-  allURL = "https://space-tourism-app-448d0-default-rtdb.firebaseio.com/";
+  allURL = "https://space-tourism-app-9a134-default-rtdb.firebaseio.com/";
   crewURL =
-    "https://space-tourism-app-448d0-default-rtdb.firebaseio.com/crew.json";
+    "https://space-tourism-app-9a134-default-rtdb.firebaseio.com/crew.json";
   destinationURL =
-    "https://space-tourism-app-448d0-default-rtdb.firebaseio.com/destinations.json";
+    "https://space-tourism-app-9a134-default-rtdb.firebaseio.com/destinations.json";
   technologyURL =
-    "https://space-tourism-app-448d0-default-rtdb.firebaseio.com/technology.json";
+    "https://space-tourism-app-9a134-default-rtdb.firebaseio.com/technology.json";
   jsonEXT = ".json";
 
   getAllCrew(): Observable<any> {
